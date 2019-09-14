@@ -1,7 +1,12 @@
 package io.jb.springbootquickstart.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
 	
+	@Id /*This will be the primary key*/
 	private String id;
 	private String name;
 	private String description;

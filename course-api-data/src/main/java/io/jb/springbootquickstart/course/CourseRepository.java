@@ -1,10 +1,9 @@
 package io.jb.springbootquickstart.course;
 
+import java.util.List;
+
 import org.springframework.data.repository.CrudRepository;
 
 public interface CourseRepository extends CrudRepository<Course, String>{
-	//get all Topics
-	//Get topic (id)
-	//updateTopic(Topic t)
-	//deleteTopic(id)
+	public List<Course> findByTopicId(String topicId);
 }
